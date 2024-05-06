@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+header img {
+  height: 25px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+main {
+  width: 320px;
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+}
+
+label {
+  color: #d6d3d3;
+}
+input {
+  height: 45px;
+  width: 100%;
+  border-radius: 7px;
+  padding: 0 5%;
+  border: 1px solid #81d581;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  text-align: justify;
+}
+
+.container-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+p {
+  color: #d6d3d3;
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.hidden {
+  display: none;
+}
+.google {
+  height: 45px;
+  width: 100%;
+  border: 1px solid #81d581;
+  color: #d6d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.style-btn {
+  background-color: #81d581;
+  color: white;
+  border: none;
+  height: 45px;
+  width: 100%;
+  font-weight: bolder;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* estilo login acesso */
+#center {
+  border: 1px solid #81d581;
+  padding: 20px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-input i {
+  font-size: 1.2em;
+  color: #81d581;
+  
+  position: absolute;
+  right: 4%;
+  bottom: 23%;
+}
+.criar-conta {
+  margin-top: 30px;
+  color: #d6d3d3;
+}
+.criar-conta span {
+  text-align: center;
+}
+.criar-conta a {
+  color: #81d581;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    width: 500px;
+  }
+}

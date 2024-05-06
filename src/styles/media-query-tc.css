@@ -1,0 +1,106 @@
+@media screen and (max-width: 600px) {
+    /* Criando a parte da tela cheia do card do artista */
+  .tela-cheia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #18e218;
+    height: 0vh;
+    width: 0vw;
+    background-color: black;
+    overflow: hidden;
+    transition: all 1s, opacity .6s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  /* segunda classe do container principal */
+  .tela-cheia.aparecer {
+    height: 600px;
+    width: 100vw;
+    margin: 0;
+    opacity: 6;
+    transform: rotateZ(360deg);
+  }
+  
+  .tela-cheia .btn-superior, .tela-cheia .share, .cantor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tela-cheia .comandos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .tela-cheia .bi {
+    color: #18e218;
+    font-size: 20px;
+  }
+  
+  .bi.bi-play-circle-fill, .bi.bi-pause-circle-fill {
+    font-size: 55px;
+  }
+  .bi.bi-skip-start-fill, .bi.bi-skip-end-fill {
+    font-size: 35px;
+  }
+  
+  .tela-cheia button {
+    background-color: transparent;
+    height: 50px;
+    border: none;
+  }
+  
+  .barra-com {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 95%;
+    margin: auto;
+  }
+  .barra-externa {
+    width: 95%;
+    margin: auto;
+    height: 10px;
+    border: 1px solid #18e218;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .barra-interna {
+    background-color: #18e218;
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+  }
+  .barra {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ms {
+    color: white;
+    font-family: Georgia;
+    font-size: .8em;
+    font-weight: bold;
+  }
+  .imagem-artista {
+    margin: 0 5%;
+    border: 1px solid #00000093;
+    
+    border-radius: 20px;
+    width: 90%;
+  }
+  .imagem-artista > img {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: inset 3px 2px 16px #00000031;
+  }
+  .artista-nome span {
+    color: white;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,205 @@
+@media screen and (max-width: 768px) {
+  
+  .sidebar {
+    z-index: 3;
+    width: 0;
+    height: 0;
+    top: 10%;
+    overflow-x: hidden;
+    transition-timing-function: ease-in;
+    transition: width 0.3s, height .8s, opacity .7s;
+    margin: 14px 0 0 10px;
+    padding: 0;
+    opacity: 0;
+  }
+  /* escondendo o menu  */
+  div.sidebar.expandir {
+    width: 40vw;
+    height: 500px;
+    background-color: #121212;
+    opacity: 6;
+  } 
+
+  .sidebar__navigation .logo img {
+  width: 50px;
+  }
+  .sidebar nav ul li a {
+  font-weight: 500;
+  font-size: 12px;
+  }
+  .library {
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  }
+  .library .library__button {
+  margin-right: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 20px 10px 20px 0px;
+  }
+  .library .library__button .fa {
+  font-size: 20px;
+  margin-right: 10px;
+  padding-right: 8px;
+  }
+  
+  .section-playlist {
+  gap: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 8px 0;
+  padding: 16px 20px;
+  }
+  
+  .section-playlist__content .section-playlist__button {
+  font-size: 11px;
+  padding: 10px;
+  width: 90px;
+  margin-top: 12px;
+  }
+  
+  .language .language__button {
+  font-weight: bold;
+  width: 123px;
+  margin: 0px;
+  padding: 4px;
+  font-size: 12px;
+  }
+  
+  /* FOOTER  */
+  
+  
+  .footer-content button {
+  background-color: #b3b3b3;
+  border-radius: 10px;
+  border: none;
+  text-transform: none;
+  padding: 7px 7px;
+  }
+  .footer-content__text {
+    width: 200px;
+  }
+  
+  
+  /* MAIN */
+  
+  .main-container {
+  max-width: 100vw;
+  height: 100vh;
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+  
+  .header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 6px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #121212;
+}
+  .menu-hamburger {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  .menu-hamburger i {
+    color: white;
+    
+  }
+  
+  .arrow-left, .arrow-right {
+  width: 20px;
+  height: 20px;
+  }
+  .header__navigation .navigation .arrow-left {
+  margin-right: 5px;
+  /* rem em relação ao tamanho da tela 
+  1 rem = 16 px   */
+}
+  
+  .header__search {
+  width: 165px;
+  height: 48px;
+  margin-left: 8px;
+  border-radius: 30px;
+}
+  .header__search img {
+  width: 8px;
+  height: 8px;
+  margin-left: 3px;
+}
+  .header__search input {
+  padding: 0px 10px 0px 6px;
+  }
+  .subscribe {
+    display: none;
+  }
+  
+  .header__login .login {
+  width: 60px;
+  height: 30px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  margin-left: 7px;
+  }
+  
+  /* PLAYLIST */
+  .playlist #greeting {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
+
+  .playlist .session {
+    font-size: 1em;
+  }
+  
+  /* SCROLL */
+  .offer__scroll-container {
+    max-height: 52vh;
+    margin: 17px;
+  }
+  
+  .playlist {
+    margin: 10px 24px;
+  }
+  .playlist #greeting {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  }
+  
+  
+  .offer__list-item {
+   display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  gap: 10px;
+  margin-bottom: 10px; 
+
+  /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
+  display: grid;  /* define o modelo de layout do elemento como uma grade */
+  gap: 16px;
+  /* não é usado mais */
+  margin: 0 auto;
+  }
+  
+  /* cards */
+  .cards {
+  width: 140px;
+  height: 180px;
+  }
+  .cards span {
+    font-size: 1em;
+  }
+  .artist-card {
+    width: 140px;
+  }
+}

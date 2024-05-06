@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crie sua conta</title>
+  <link rel="stylesheet" href="src/styles/login.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <img src="src/assets/logo-spotify.png" alt="">
+  </header>
+  <main>
+    <form method="post" id="form">
+      <div class="container-input">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <p class="red input1"></p>
+      </div>
+      
+      <div class="container-input">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome">
+        <p class="red input2"></p>
+      </div>
+      
+      <div class="container-input">
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento">
+        <p class="red input3"></p>
+      </div>
+      
+      <div class="container-input">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha">
+        <i class="bi bi-eye-fill pass"></i>
+        <p class="red input4"></p>
+      </div>
+      
+      <div class="container-input">
+        <label for="senha2">Senha Novamente:</label>
+       <input type="password" id="senha2">
+       <i class="bi bi-eye-fill pass"></i>
+       <p class="red input5"></p>
+      </div>
+      
+      <div class="container-input">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <p class="red input6"></p>
+      </div>
+      <div class="container-btns">
+        <button class="style-btn" id="criar-conta">Criar</button>
+        <p>ou escolha outra opção</p>
+        <div class="google">
+          <span>Conectar com Google</span>
+        </div>
+      </div>
+      
+    </form>
+  </main>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  
+  <script src="script-login.js"></script>
+</body>
+</html>
